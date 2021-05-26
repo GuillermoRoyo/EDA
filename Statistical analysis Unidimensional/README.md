@@ -13,7 +13,7 @@ ggplot(data = df, aes(x = df$IMC)) +
   scale_fill_viridis_c() +
   scale_color_viridis_c() +
   ggtitle("Histograma + curva normal teórica")
-(https://github.com/GuillermoRoyo/EDA/blob/main/Images/Representaci%C3%B3n%20de%20los%20datos%20IMC.png)
+<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Representaci%C3%B3n%20de%20los%20datos%20IMC.png" align="right" width="30%"></a>
 
 ## Representación de los datos AC
 ggplot(data = df, aes(x = df$AC)) +
@@ -23,19 +23,21 @@ ggplot(data = df, aes(x = df$AC)) +
   scale_fill_viridis_c() +
   scale_color_viridis_c() +
   ggtitle("Histograma + curva normal teórica")
-(https://github.com/GuillermoRoyo/EDA/blob/main/Images/Representaci%C3%B3n%20de%20los%20datos%20AC.png)
+<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Representaci%C3%B3n%20de%20los%20datos%20AC.png" align="right" width="30%"></a>
 
 ## Boxplot del dataframe conjunto
 boxplot(df$IMC, lwd = 2,col = "#0C3D7D9F",
         xlab = "Dataframe Conjunto", ylab = "IMC", main = "IMC en la totalidad del grupo",
         border = "black",outpch = 25, outbg = "red",whiskcol = "black",whisklty = 2,lty = 1) 
-(https://github.com/GuillermoRoyo/EDA/blob/main/Images/Boxplot%20del%20dataframe%20conjunto.png)
+<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Boxplot%20del%20dataframe%20conjunto.png" align="right" width="30%"></a>
+
 
 ## Boxplot por categorías AC
 boxplot(df$IMC ~ df$AC, lwd = 2, col = "#0C3D7D9F",
         xlab = "Dataframe * categorías", ylab = "IMC", main = "IMC * categorías",
         border = "black", outpch = 25,  outbg = "red", whiskcol = "black", whisklty = 2, lty = 1)
-(https://github.com/GuillermoRoyo/EDA/blob/main/Images/Boxplot%20por%20categor%C3%ADas%20AC.png)
+<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Boxplot%20por%20categor%C3%ADas%20AC.png" align="right" width="30%"></a>
+
 
 Observamos vacíos dentro del histograma, pudiendo implicar presencia de outliers dentro de la muestra.
 Identificamos el pico más alto (=26) obteniendo este la mayor frecuencia.
