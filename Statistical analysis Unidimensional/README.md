@@ -10,7 +10,7 @@ ggplot(data = df, aes(x = df$IMC)) +
   scale_color_viridis_c() +
   ggtitle("Histograma + curva normal teórica")
  ```
-<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Representaci%C3%B3n%20de%20los%20datos%20IMC.png" align="right" width="30%"></a>
+<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Representaci%C3%B3n%20de%20los%20datos%20IMC.png" align="centre" width="50%"></a>
 </br>
 ## Representación de los datos AC
 ```
@@ -22,7 +22,7 @@ ggplot(data = df, aes(x = df$AC)) +
   scale_color_viridis_c() +
   ggtitle("Histograma + curva normal teórica")
 ```
-<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Representaci%C3%B3n%20de%20los%20datos%20AC.png" align="right" width="30%"></a>
+<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Representaci%C3%B3n%20de%20los%20datos%20AC.png" align="centre" width="50%"></a>
 </br>
 ## Boxplot del dataframe conjunto
 ```
@@ -30,7 +30,7 @@ boxplot(df$IMC, lwd = 2,col = "#0C3D7D9F",
         xlab = "Dataframe Conjunto", ylab = "IMC", main = "IMC en la totalidad del grupo",
         border = "black",outpch = 25, outbg = "red",whiskcol = "black",whisklty = 2,lty = 1)
 ```
-<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Boxplot%20del%20dataframe%20conjunto.png" align="left" width="30%"></a>
+<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Boxplot%20del%20dataframe%20conjunto.png" align="centre" width="50%"></a>
 </br>
 ## Boxplot por categorías AC
 ```
@@ -38,12 +38,12 @@ boxplot(df$IMC ~ df$AC, lwd = 2, col = "#0C3D7D9F",
         xlab = "Dataframe * categorías", ylab = "IMC", main = "IMC * categorías",
         border = "black", outpch = 25,  outbg = "red", whiskcol = "black", whisklty = 2, lty = 1)
 ```
-<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Boxplot%20por%20categor%C3%ADas%20AC.png" align="down" width="30%"></a>
+<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Boxplot%20por%20categor%C3%ADas%20AC.png" align="centre" width="50%"></a>
 </br>
 ## Correlación entre las dos variables del conjunto de datos
 correlacion= round(cor(df), 2)
 corrplot(correlacion, method="number", type="upper")
-<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Correlaci%C3%B3n%20entre%20las%20dos%20variables%20del%20conjunto%20de%20datos.png" width="30%"></a>
+<a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Correlaci%C3%B3n%20entre%20las%20dos%20variables%20del%20conjunto%20de%20datos.png" align="centre" width="50%"></a>
 </br>
 - Observamos vacíos dentro del histograma, pudiendo implicar presencia de outliers dentro de la muestra.
 - Identificamos el pico más alto (=26) obteniendo este la mayor frecuencia.
