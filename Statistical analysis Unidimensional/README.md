@@ -41,8 +41,10 @@ boxplot(df$IMC ~ df$AC, lwd = 2, col = "#0C3D7D9F",
 <a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Boxplot%20por%20categor%C3%ADas%20AC.png" align="centre" width="50%"></a>
 </br>
 ## Correlación entre las dos variables del conjunto de datos
+```
 correlacion= round(cor(df), 2)
 corrplot(correlacion, method="number", type="upper")
+```
 <a href="url"><img src="https://github.com/GuillermoRoyo/EDA/blob/main/Images/Correlaci%C3%B3n%20entre%20las%20dos%20variables%20del%20conjunto%20de%20datos.png" align="centre" width="50%"></a>
 </br>
 - Observamos vacíos dentro del histograma, pudiendo implicar presencia de outliers dentro de la muestra.
